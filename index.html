@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>A-Frame Particle System Component Example</title>
+    <meta name="description" content="Hello, World!">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script> 
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script> 
+    <script src="https://unpkg.com/aframe-mirror-component/dist/aframe-mirror-component.min.js"></script> 
+  </head>
+  <body>
+   <a-scene>
+  <a-assets>
+     <img id="bbys" src="https://cdn.glitch.com/ada28678-abf0-4214-9512-0205ea754bdc%2Fmorebbys.jpg?v=1568268164162">
+    <img id="moon" src="https://cdn.glitch.com/ada28678-abf0-4214-9512-0205ea754bdc%2FMoon%20Skin.png?v=1568267555371">
+    <img id="earth" src="https://cdn.glitch.com/ada28678-abf0-4214-9512-0205ea754bdc%2Fworld_topography_cloud-cover-pacific-giclee_lg.jpg?v=1568267667989">
+    <img id="cubic" src="https://cdn.glitch.com/ada28678-abf0-4214-9512-0205ea754bdc%2Fimages-1.jpg?v=1568268685025">
+    <img id="360background" src="https://cdn.glitch.com/ada28678-abf0-4214-9512-0205ea754bdc%2FIMG_8030.JPG?v=1568268759213">
+    <img id="fisheye" src="https://cdn.glitch.com/ada28678-abf0-4214-9512-0205ea754bdc%2FHow-to-Stitch-360-Footage-in-After-Effects-Unstitched-360-Footage.jpg?v=1568269106996">
+  </a-assets>
+     
+<!-- <a-plane color="black" height="25" width="25" position="-1 0 -1" rotation="-90 0 0"> </a-plane> -->
+     <a-sky  color="teal" material="src:#moon"></a-sky>
+<a-sphere radius="1" position="1 1 -5" material="src: #bbys" rotation="0 -90 10"></a-sphere>
+     <a-sphere mirror radius="2" position="-2 3 -8" material="src: #earth"></a-sphere>
+     <a-sphere radius=".5" position="-1 1.2 -3" material="src:#moon"></a-sphere>
+     <a-sphere radius=".5" position="0 .5 -2" material="src:#earth" rotation="0 270 40"></a-sphere>
+     <a-sphere radius=".3" position="-2 1 -3" material="src:#fisheye"></a-sphere>
+     <a-sphere  radius="10" position="0 0 0" side="double" material="src:#moon" rotation="0 280 20"></a-sphere>
+     <a-sphere  mirror radius="5" position="0 25 0" side="double" material="src:#moon" rotation="0 280 20"></a-sphere>
+      <a-sphere radius="9.9" position="0 0 0" side="double" material="src:#360background" rotation="0 80 20"></a-sphere>
+     <a-sphere color="teal" radius="100" position="0 0 0" side="double" material="src:#moon" rotation="0 80 20"> </a-sphere>
+     
+     <a-box mirror position="0 -4 -5" height="5" width="5" depth="5" color="red"></a-box>
+
+
+ 
+    
+</a-scene>
+  </body>
+</html>
+
